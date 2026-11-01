@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Kylix.uz — интернет-магазин одежды</title>
+<meta name="description" content="Kylix.uz — интернет-магазин: одежда, обувь, кепки и многое другое с удобной доставкой.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ecebe6; --fg: #17181c; --muted: #5d6068; --line: rgba(23,24,28,.16);
+    --accent: #e4572e; --accent-fg: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16171b; --fg: #ecebe6; --muted: #9a9ca4; --line: rgba(236,235,230,.18); --accent: #ff7a4d; --accent-fg: #16171b; }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  html, body { background: var(--bg); color: var(--fg); }
+  body { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 500; line-height: 1.55; font-size: 18px; }
+  main { max-width: 720px; margin: 0 auto; padding: 0 22px 56px; }
+  .logo { padding: 28px 0 0; font-weight: 800; font-size: 20px; letter-spacing: -.01em; }
+  .logo i { color: var(--accent); font-style: normal; }
+  h1 { font-weight: 800; font-size: clamp(56px, 17vw, 120px); line-height: .92; letter-spacing: -.04em; margin: 56px 0 26px; }
+  .lead { max-width: 30ch; font-size: clamp(20px, 4.4vw, 26px); line-height: 1.35; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; list-style: none; padding: 0; }
+  .tags li { border: 1.5px solid var(--fg); border-radius: 999px; padding: 6px 16px; font-size: 16px; }
+  h2 { font-weight: 800; font-size: 26px; letter-spacing: -.02em; margin: 64px 0 8px; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); color: inherit; text-decoration: none; }
+  .row:first-of-type { border-top: 1px solid var(--line); }
+  .row b { font-weight: 800; font-size: 20px; }
+  .row span { color: var(--muted); font-size: 16px; text-align: right; }
+  .row:hover b, .row:focus-visible b { color: var(--accent); }
+  .row:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .cta { display: inline-block; margin-top: 36px; background: var(--accent); color: var(--accent-fg); padding: 14px 26px; border-radius: 999px; font: 800 17px "Bricolage Grotesque", sans-serif; text-decoration: none; }
+  .cta:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+  @media (prefers-reduced-motion: no-preference) { h1 { animation: in .6s ease-out both; } @keyframes in { from { opacity: 0; transform: translateY(16px); } } }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo">kylix<i>.</i>uz</div>
+
+  <h1>Kylix</h1>
+  <p class="lead">Интернет-магазин с большим выбором товаров и удобной доставкой.</p>
+  <ul class="tags">
+    <li>Одежда</li><li>Обувь</li><li>Кепки</li><li>И многое другое</li>
+  </ul>
+
+  <h2>Что такое Kylix.uz</h2>
+  <p style="max-width:34ch">Kylix.uz — это интернет-магазин с большим выбором товаров: одежда, обувь, кепки и многое другое с удобной доставкой.</p>
+
+  <h2>Мы в соцсетях</h2>
+  <a class="row" href="https://www.instagram.com/kylix.uz" target="_blank" rel="noopener"><b>Instagram</b><span>@kylix.uz</span></a>
+  <a class="row" href="https://t.me/kylixuz" target="_blank" rel="noopener"><b>Telegram-канал</b><span>@kylixuz</span></a>
+
+  <h2>Связаться</h2>
+  <a class="row" href="tel:+998877701799"><b>Телефон</b><span>+998 87 770 17 99</span></a>
+  <a class="row" href="https://t.me/azatrdv" target="_blank" rel="noopener"><b>Telegram</b><span>@azatrdv</span></a>
+
+  <a class="cta" href="https://t.me/azatrdv" target="_blank" rel="noopener">Написать в Telegram</a>
+</main>
+</body>
+</html>
